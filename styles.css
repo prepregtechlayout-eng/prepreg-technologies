@@ -100,7 +100,6 @@ hr {
   max-width: 800px;
 }
 
-
 /* Header Bar */
 .header-bar {
   background: #f5f50a;
@@ -693,4 +692,5 @@ h3 {
 .footer-column.social a img:hover {
   transform: scale(1.2);   /* zoom effect on hover */
 }
+
 
