@@ -9,8 +9,8 @@ body {
 
 /* Container */
 .search-result {
-  width: 150%;        /* full width */
-  max-width: 1200px;  /* optional: keep text neat on large screens */
+  width:fit-content:        /* full width */
+  max-width: fit-content;  /* optional: keep text neat on large screens */
   margin: 0;
   text-align: left;
 }
@@ -692,6 +692,7 @@ h3 {
 .footer-column.social a img:hover {
   transform: scale(1.2);   /* zoom effect on hover */
 }
+
 
 
 
