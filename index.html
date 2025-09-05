@@ -47,16 +47,17 @@
 
     <!-- Navigation -->
     <nav class="nav-menu">
-      <ul>
-        <li><a href="#" onclick="showSection('home')">Home</a></li>
-        <li><a href="#" onclick="showSection('services')">Services</a></li>
-        <li><a href="#" onclick="showSection('products')">Products</a></li>
-        <li><a href="#" onclick="showSection('about')">About</a></li>
-        <li><a href="#" onclick="showSection('careers')">Careers</a></li>
-        <li><a href="#" onclick="showSection('contact')">Contact</a></li>
-        <li><a href="#" onclick="showSection('events')">Events</a></li>
-      </ul>
-    </nav>
+  <ul>
+    <li><a href="#home" onclick="showSection('home'); return false;">Home</a></li>
+    <li><a href="#services" onclick="showSection('services'); return false;">Services</a></li>
+    <li><a href="#products" onclick="showSection('products'); return false;">Products</a></li>
+    <li><a href="#about" onclick="showSection('about'); return false;">About</a></li>
+    <li><a href="#careers" onclick="showSection('careers'); return false;">Careers</a></li>
+    <li><a href="#contact" onclick="showSection('contact'); return false;">Contact</a></li>
+    <li><a href="#events" onclick="showSection('events'); return false;">Events</a></li>
+  </ul>
+</nav>
+
 
     <!-- Contact Button -->
     <a href="#" onclick="showSection('contact')" class="contact-btn">
@@ -449,6 +450,7 @@ document.getElementById("applicationForm").addEventListener("submit", function(e
 
 </body>
 </html>
+
 
 
 
