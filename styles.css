@@ -1,104 +1,117 @@
-/* General Page */
+/* General Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 body {
-  font-family: Arial, sans-serif;
-  background: #fff;
-  margin: 0;
-  padding: 20px 50px;  /* padding left/right */
-  color: #202124;
+  font-family: "Segoe UI", Roboto, Arial, sans-serif;
+  line-height: 1.6;
+  color: #333;
+  background: #fdfdfd;
 }
 
-/* Container */
-.search-result {
-  width:fit-content:        /* full width */
-  max-width: fit-content;  /* optional: keep text neat on large screens */
-  margin: 0;
-  text-align: left;
+/* Header */
+header {
+  text-align: center;
+  padding: 2rem 1rem;
+  background: #f7f9fc;
+  border-bottom: 2px solid #e6e6e6;
 }
 
-/* Header (Logo + Company Info) */
-.header {
+header .logo {
+  max-width: 120px;
+  margin-bottom: 1rem;
+}
+
+header h1 {
+  font-size: 2rem;
+  font-weight: 600;
+  color: #003366;
+}
+
+header p {
+  color: #555;
+  font-size: 1.1rem;
+  margin-top: 0.5rem;
+}
+
+/* Navigation */
+nav {
+  margin-top: 1.5rem;
+}
+
+nav ul {
+  list-style: none;
   display: flex;
-  align-items: center;
-  margin-bottom: 15px;
+  justify-content: center;
+  gap: 2rem;
 }
 
-.logo {
-  width: 45px;
-  height: 45px;
-  margin-right: 12px;
-}
-
-.company-info {
-  line-height: 1.3;
-}
-
-.company-name {
-  font-weight: bold;
-  font-size: 16px;
-  color: #202124;
-}
-
-.url {
-  font-size: 13px;
-  color: #006621;
-}
-
-/* Main Title */
-.title {
-  font-size: 22px;
-  margin: 5px 0 10px;
-}
-
-.title a {
-  color: #1a0dab;
+nav a {
   text-decoration: none;
-}
-
-.title a:hover {
-  text-decoration: underline;
-}
-
-/* Description */
-.description {
-  font-size: 15px;
-  color: #4d5156;
-  margin-bottom: 20px;
-  max-width: 1000px; /* keep paragraphs readable */
-}
-
-/* Divider */
-hr {
-  border: 0;
-  border-top: 1px solid #e0e0e0;
-  margin: 20px 0;
-}
-
-/* Sub-links Section */
-.sublinks {
-  margin-top: 15px;
-}
-
-.sublink {
-  margin-bottom: 18px;
-}
-
-.sublink a {
-  font-size: 16px;
+  color: #0066cc;
   font-weight: 500;
-  color: #1a0dab;
-  text-decoration: none;
+  transition: color 0.3s ease;
 }
 
-.sublink a:hover {
-  text-decoration: underline;
+nav a:hover {
+  color: #ff6600;
 }
 
-.sublink p {
-  font-size: 13px;
-  color: #4d5156;
-  margin: 3px 0 0;
-  max-width: 800px;
+/* Sections */
+section {
+  padding: 3rem 1.5rem;
+  max-width: 900px;
+  margin: 0 auto;
 }
+
+section h2 {
+  font-size: 1.8rem;
+  margin-bottom: 1rem;
+  color: #003366;
+  text-align: center;
+}
+
+section p,
+section li {
+  font-size: 1rem;
+  color: #444;
+  margin-bottom: 0.8rem;
+  text-align: center;
+}
+
+section ul {
+  list-style: none;
+  padding: 0;
+}
+
+section ul li {
+  background: #f0f6ff;
+  padding: 0.8rem 1rem;
+  margin: 0.5rem 0;
+  border-radius: 8px;
+  transition: background 0.3s;
+}
+
+section ul li:hover {
+  background: #e0ecff;
+}
+
+/* Footer */
+footer {
+  background: #003366;
+  color: white;
+  text-align: center;
+  padding: 1rem;
+  margin-top: 2rem;
+  font-size: 0.9rem;
+}
+
+
+
+
 
 /* Header Bar */
 .header-bar {
@@ -183,13 +196,16 @@ font-size: 1.1rem;
   position: relative;
   height: 500px;
   overflow: hidden;
+  width: 2000px;
 }
 
 .hero-video {
   width: 100%;
-  height: 100%;
-  object-fit: cover;
+  height: 90vh; /* full screen height (adjust as needed) */
+  object-fit: cover; /* keeps aspect ratio, fills container */
+  display: block;
 }
+
 
 .hero-text {
   position: absolute;
@@ -692,7 +708,3 @@ h3 {
 .footer-column.social a img:hover {
   transform: scale(1.2);   /* zoom effect on hover */
 }
-
-
-
-
