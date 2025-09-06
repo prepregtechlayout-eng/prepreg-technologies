@@ -12,23 +12,31 @@
   <link rel="apple-touch-icon" href="anuraj_prepreg_ratio_3_sqare-1.png">
   <link rel="shortcut icon" href="anuraj_prepreg_ratio_3_sqare-1.png" type="image/png">
 
-  <!-- Organization Schema with Logo -->
+  <!-- ✅ Organization Schema with Logo -->
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
     "@type": "Organization",
     "name": "Prepreg Technologies Private Limited",
     "url": "https://prepregtechnologies.com/",
-    "logo": "https://prepregtechnologies.com/anuraj_prepreg_ratio_3_sqare-1.png"
+    "logo": "https://prepregtechnologies.com/anuraj_prepreg_ratio_3_sqare-1.png",
+    "contactPoint": {
+      "@type": "ContactPoint",
+      "telephone": "+91-9880560279",
+      "contactType": "customer service",
+      "email": "prepregtechnologies@gmail.com",
+      "areaServed": "IN"
+    }
   }
   </script>
 
-  <!-- Website Schema for SearchAction -->
+  <!-- ✅ Website Schema for SearchAction -->
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
     "@type": "WebSite",
     "url": "https://prepregtechnologies.com/",
+    "name": "Prepreg Technologies",
     "potentialAction": {
       "@type": "SearchAction",
       "target": "https://prepregtechnologies.com/?q={search_term_string}",
@@ -37,20 +45,42 @@
   }
   </script>
 
-  <!-- Breadcrumb Schema -->
+  <!-- ✅ Site Navigation Schema (helps with sitelinks) -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "SiteNavigationElement",
+    "name": ["Home","About","Services","Products","Careers","Contact","Events"],
+    "url": [
+      "https://prepregtechnologies.com/#home",
+      "https://prepregtechnologies.com/#about",
+      "https://prepregtechnologies.com/#services",
+      "https://prepregtechnologies.com/#products",
+      "https://prepregtechnologies.com/#careers",
+      "https://prepregtechnologies.com/#contact",
+      "https://prepregtechnologies.com/#events"
+    ]
+  }
+  </script>
+
+  <!-- ✅ Breadcrumb Schema -->
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
     "@type": "BreadcrumbList",
     "itemListElement": [
-      { "@type": "ListItem", "position": 1, "name": "About", "item": "https://prepregtechnologies.com/#about" },
-      { "@type": "ListItem", "position": 2, "name": "Services", "item": "https://prepregtechnologies.com/#services" },
-      { "@type": "ListItem", "position": 3, "name": "Careers", "item": "https://prepregtechnologies.com/#careers" },
-      { "@type": "ListItem", "position": 4, "name": "Contact", "item": "https://prepregtechnologies.com/#contact" }
+      { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://prepregtechnologies.com/#home" },
+      { "@type": "ListItem", "position": 2, "name": "About", "item": "https://prepregtechnologies.com/#about" },
+      { "@type": "ListItem", "position": 3, "name": "Services", "item": "https://prepregtechnologies.com/#services" },
+      { "@type": "ListItem", "position": 4, "name": "Products", "item": "https://prepregtechnologies.com/#products" },
+      { "@type": "ListItem", "position": 5, "name": "Careers", "item": "https://prepregtechnologies.com/#careers" },
+      { "@type": "ListItem", "position": 6, "name": "Contact", "item": "https://prepregtechnologies.com/#contact" },
+      { "@type": "ListItem", "position": 7, "name": "Events", "item": "https://prepregtechnologies.com/#events" }
     ]
   }
   </script>
 </head>
+
 
 <body>
 
@@ -465,6 +495,7 @@ document.getElementById("applicationForm").addEventListener("submit", function(e
 
 </body>
 </html>
+
 
 
 
