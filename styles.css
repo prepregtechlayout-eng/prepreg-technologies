@@ -698,11 +698,11 @@ h3 {
       margin-top: 10px;
     }
 
-    .icon {
-      width: 20px;
-      vertical-align: middle;
-      margin-right: 8px;
-    }
+   .icon {
+  width: 20px;
+  height: 20px;
+  margin-right: 8px;
+}
 
     .copyright {
       text-align: center;
@@ -730,9 +730,7 @@ h3 {
 
 .social-links a:hover {
   text-decoration: underline;
-  colour:#fff;
 }
-
 .social-links .icon {
   width: 24px;           /* uniform size */
   height: 24px;
@@ -745,5 +743,4 @@ h3 {
 .social-links .icon:hover {
   transform: scale(1.2);
 }
-
 
