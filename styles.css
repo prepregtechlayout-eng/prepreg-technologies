@@ -203,20 +203,29 @@ font-size: 1.1rem;
 .contact-btn:hover {
   background: #00a85e;
 }
-
-    .hero-section {
+/* Override global section rules for hero only */
+.hero-section {
   position: relative;
-  height: 500px;
+  width: 100vw;      /* force full viewport width */
+  height: 500px;     /* fixed height */
+  margin: 0;         /* remove auto-centering */
+  padding: 0;
   overflow: hidden;
-  width: 2000px;
+  max-width: none;   /* disable the 900px restriction */
 }
 
 .hero-video {
+  position: absolute;
+  top: 0;
+  left: 0;
   width: 100%;
-  height: 90vh; /* full screen height (adjust as needed) */
-  object-fit: cover; /* keeps aspect ratio, fills container */
-  display: block;
+  height: 100%;
+  object-fit: cover; /* fill space with cropping */
 }
+
+
+
+
 
 
 .hero-text {
@@ -702,23 +711,36 @@ h3 {
       border-top: 1px solid #666;
       margin-top: 20px;
     }
-/* Social icons fix */
-.footer-column.social a {
-  text-decoration: none;   /* remove underline */
-  color: inherit;          /* inherit parent color (white) */
-  display: inline-block;   /* makes icon clickable neatly */
+/* Social Links Section */
+.social-links {
+  display: flex;
+  flex-direction: column; /* stack icons vertically */
+  gap: 8px;               /* spacing between items */
 }
 
-.footer-column.social a img {
-  width: 28px;             /* adjust size of icons */
-  height: auto;
-  margin: 0 6px;           /* spacing between icons */
+.social-links a {
+  text-decoration: none;
+  color: #ddd;           /* consistent text color */
+  display: flex;
+  align-items: center;   /* ensures icon + text align */
+  font-size: 0.95rem;
+  transition: color 0.2s ease;
+}
+
+.social-links a:hover {
+  color: #fff;           /* highlight on hover */
+}
+
+.social-links .icon {
+  width: 24px;           /* uniform size */
+  height: 24px;
+  margin-right: 8px;
+  flex-shrink: 0;        /* keeps icon from shrinking */
   vertical-align: middle;
-  transition: transform 0.2s ease; /* hover animation */
+  transition: transform 0.2s ease;
 }
 
-.footer-column.social a img:hover {
-  transform: scale(1.2);   /* zoom effect on hover */
+.social-links .icon:hover {
+  transform: scale(1.2);
 }
-
 
