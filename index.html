@@ -89,30 +89,44 @@
   <div class="header-container">
     <!-- Logo + Name -->
     <div class="logo">
-      <img src="anuraj_prepreg ratio_3_sqare-1.png" alt="Prepreg Logo" />
+      <img src="anuraj_prepreg_ratio_3_sqare-1.png" alt="Prepreg Logo" />
       <span class="logo-text"><strong>Prepreg</strong> <span class="logo-subtext">Technologies</span></span>
     </div>
 
+    <!-- Hamburger (mobile only) -->
+    <div class="hamburger" onclick="toggleMenu()">☰</div>
+
     <!-- Navigation -->
     <nav class="nav-menu">
-  <ul>
-    <li><a href="#home" onclick="showSection('home'); return false;">Home</a></li>
-    <li><a href="#services" onclick="showSection('services'); return false;">Services</a></li>
-    <li><a href="#products" onclick="showSection('products'); return false;">Products</a></li>
-    <li><a href="#about" onclick="showSection('about'); return false;">About</a></li>
-    <li><a href="#careers" onclick="showSection('careers'); return false;">Careers</a></li>
-    <li><a href="#contact" onclick="showSection('contact'); return false;">Contact</a></li>
-    <li><a href="#events" onclick="showSection('events'); return false;">Events</a></li>
-  </ul>
-</nav>
+      <ul>
+        <li><a href="#home" onclick="showSection('home'); return false;">Home</a></li>
+        <li><a href="#services" onclick="showSection('services'); return false;">Services</a></li>
+        <li><a href="#products" onclick="showSection('products'); return false;">Products</a></li>
+        <li><a href="#about" onclick="showSection('about'); return false;">About</a></li>
+        <li><a href="#careers" onclick="showSection('careers'); return false;">Careers</a></li>
+        <li><a href="#contact" onclick="showSection('contact'); return false;">Contact</a></li>
+        <li><a href="#events" onclick="showSection('events'); return false;">Events</a></li>
+        <!-- ✅ Contact button moved inside menu for mobile -->
+        <li class="mobile-contact">
+          <a href="#contact" onclick="showSection('contact'); return false;" class="contact-btn">Get in Touch</a>
+        </li>
+      </ul>
+    </nav>
 
-
-    <!-- Contact Button -->
-   <a href="#contact" onclick="showSection('contact'); return false;" class="contact-btn">
-  Get in touch
-   </a>
+    <!-- Contact Button (desktop only) -->
+    <a href="#contact" onclick="showSection('contact'); return false;" class="contact-btn desktop-contact">
+      Get in Touch
+    </a>
   </div>
 </header>
+
+<!-- JS for menu toggle -->
+<script>
+  function toggleMenu() {
+    document.querySelector('.nav-menu').classList.toggle('active');
+  }
+</script>
+
 
 
   <!-- Hero Section -->
@@ -495,6 +509,7 @@ document.getElementById("applicationForm").addEventListener("submit", function(e
 
 </body>
 </html>
+
 
 
 
