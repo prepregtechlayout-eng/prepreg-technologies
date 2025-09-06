@@ -106,26 +106,29 @@
         <li><a href="#careers" onclick="showSection('careers'); return false;">Careers</a></li>
         <li><a href="#contact" onclick="showSection('contact'); return false;">Contact</a></li>
         <li><a href="#events" onclick="showSection('events'); return false;">Events</a></li>
-        <!-- ✅ Contact button moved inside menu for mobile -->
+        <!-- ✅ Contact button for mobile -->
         <li class="mobile-contact">
           <a href="#contact" onclick="showSection('contact'); return false;" class="contact-btn">Get in Touch</a>
         </li>
       </ul>
     </nav>
 
-    <!-- Contact Button (desktop only) -->
+    <!-- ✅ Desktop-only contact button -->
     <a href="#contact" onclick="showSection('contact'); return false;" class="contact-btn desktop-contact">
       Get in Touch
     </a>
   </div>
 </header>
 
-<!-- JS for menu toggle -->
 <script>
   function toggleMenu() {
-    document.querySelector('.nav-menu').classList.toggle('active');
+    const menu = document.querySelector('.nav-menu');
+    const burger = document.querySelector('.hamburger');
+    menu.classList.toggle('active');
+    burger.textContent = menu.classList.contains('active') ? '✖' : '☰';
   }
 </script>
+
 
 
 
