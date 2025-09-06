@@ -350,7 +350,7 @@ font-size: 1.1rem;
 #services {
   padding: 50px 20px;
   background-color: #d7d7eb;
-  text-align:left;
+  text-align:center;
 }
 /* Products Section */
 #products {
@@ -743,4 +743,5 @@ h3 {
 .social-links .icon:hover {
   transform: scale(1.2);
 }
+
 
