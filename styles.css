@@ -11,6 +11,11 @@ body {
   color: #333;
   background: #fdfdfd;
 }
+/* Ensure images (like logo) scale properly */
+img {
+  max-width: 100%;
+  height: auto;
+}
 
 /* Header */
 header {
@@ -708,3 +713,4 @@ h3 {
 .footer-column.social a img:hover {
   transform: scale(1.2);   /* zoom effect on hover */
 }
+
