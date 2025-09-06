@@ -745,77 +745,53 @@ h3 {
 }
 
 
-/* =======================
-   Responsive Fixes
-   ======================= */
+/* Hamburger hidden on desktop */
+.hamburger {
+  display: none;
+  font-size: 1.8rem;
+  cursor: pointer;
+  user-select: none;
+}
 
-/* Mobile Menu (stack navigation vertically) */
+/* Default: hide mobile-only button */
+.mobile-contact {
+  display: none;
+}
+
+/* Mobile styles */
 @media (max-width: 768px) {
-  .nav-menu ul {
-    flex-direction: column;
-    gap: 1rem;
+  /* Show hamburger */
+  .hamburger {
+    display: block;
+    color: #000;
+  }
+
+  /* Hide nav until opened */
+  .nav-menu {
+    display: none;
+    width: 100%;
+  }
+
+  .nav-menu.active {
+    display: block;
     background: #f7f9fc;
     padding: 1rem;
     border-radius: 8px;
   }
 
-  .header-container {
+  .nav-menu ul {
     flex-direction: column;
-    align-items: flex-start;
+    gap: 1rem;
   }
 
-  .contact-btn {
-    margin-top: 10px;
-    align-self: flex-start;
-  }
-}
-
-/* Hero Section */
-@media (max-width: 768px) {
-  .hero-section {
-    height: 300px; /* smaller height for mobile */
-  }
-  .hero-text h1 {
-    font-size: 1.2rem;
-  }
-  .quote-btn {
-    font-size: 14px;
-    padding: 8px 15px;
-  }
-}
-
-/* Products, Services, Careers, Events */
-@media (max-width: 768px) {
-  .products-container,
-  .job-list,
-  .events-container,
-  .home-section .projects-grid {
-    flex-direction: column;
-    display: flex;
-    gap: 20px;
+  /* Desktop contact button hidden */
+  .desktop-contact {
+    display: none;
   }
 
-  .product-card,
-  .job-card,
-  .project-card,
-  .event-card {
-    width: 100% !important;
-  }
-
-  .event-gallery {
-    grid-template-columns: 1fr; /* stack images vertically */
-  }
-}
-
-/* Footer */
-@media (max-width: 600px) {
-  .footer-container {
-    flex-direction: column;
+  /* Mobile contact button visible */
+  .mobile-contact {
+    display: block;
     text-align: center;
   }
-
-  .footer-column {
-    margin: 10px 0;
-  }
 }
-
