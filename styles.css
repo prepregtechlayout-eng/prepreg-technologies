@@ -16,6 +16,13 @@ img {
   max-width: 100%;
   height: auto;
 }
+/* Logo styling */
+.logo {
+  width: 48px;   /* same size Google usually shows */
+  height: 48px;
+  object-fit: contain; /* prevents distortion */
+  border-radius: 8px;  /* small rounding like LinkedIn logo */
+}
 
 /* Header */
 header {
@@ -713,4 +720,5 @@ h3 {
 .footer-column.social a img:hover {
   transform: scale(1.2);   /* zoom effect on hover */
 }
+
 
