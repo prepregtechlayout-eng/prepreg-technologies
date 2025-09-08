@@ -3,8 +3,12 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <!-- SEO Title & Description -->
   <title>Prepreg Technologies Pvt. Ltd. | PCB Design, Embedded Systems & Chip Solutions</title>
   <meta name="description" content="Prepreg Technologies offers expert PCB design, embedded systems, FPGA boards, and chip design services. Trusted by global clients for innovation, quality, and end-to-end electronic solutions.">
+
+  <!-- Stylesheet -->
   <link rel="stylesheet" href="styles.css">
 
   <!-- Favicons -->
@@ -81,145 +85,110 @@
   </script>
 </head>
 
-
 <body>
 
-<!-- Header -->
-<header class="header-bar">
-  <div class="header-container">
-    <!-- Logo + Name -->
-    <div class="logo">
-      <img src="anuraj_prepreg_ratio_3_sqare-1.png" alt="Prepreg Logo" />
-      <span class="logo-text"><strong>Prepreg</strong> <span class="logo-subtext">Technologies</span></span>
+  <!-- Header Bar -->
+  <header class="header-bar">
+    <div class="header-container">
+      <!-- Logo + Name -->
+      <div class="logo">
+        <img src="anuraj_prepreg_ratio_3_sqare-1.png" alt="Company Logo" />
+        <span class="logo-text">Prepreg <span>Technologies</span></span>
+        <span class="logo-subtext">Innovating Tomorrow</span>
+      </div>
+
+      <!-- Navigation -->
+      <nav class="nav-menu">
+        <ul>
+          <li><a href="#home">Home</a></li>
+          <li><a href="#services">Services</a></li>
+          <li><a href="#products">Products</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#careers">Careers</a></li>
+          <li><a href="#events">Events</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+        <a href="#contact" class="contact-btn desktop-contact">Get in Touch</a>
+        <a href="#contact" class="contact-btn mobile-contact">Contact</a>
+      </nav>
+
+      <!-- Hamburger for mobile -->
+      <div class="hamburger">&#9776;</div>
     </div>
+  </header>
 
-    <!-- Hamburger (mobile only) -->
-    <div class="hamburger" onclick="toggleMenu()">☰</div>
+  <!-- Hero Section with Video Background -->
+  <section class="hero-section" id="home">
+    <video autoplay muted loop class="hero-video">
+      <source src="electronicspcb.mp4" type="video/mp4">
+      Your browser does not support video.
+    </video>
+    <div class="hero-text">
+      <h1>Building the Future of Technology</h1>
+      <button class="quote-btn">Request a Quote</button>
+    </div>
+  </section>
 
-    <!-- Navigation -->
-    <nav class="nav-menu">
-      <ul>
-        <li><a href="#home" onclick="showSection('home'); return false;">Home</a></li>
-        <li><a href="#services" onclick="showSection('services'); return false;">Services</a></li>
-        <li><a href="#products" onclick="showSection('products'); return false;">Products</a></li>
-        <li><a href="#about" onclick="showSection('about'); return false;">About</a></li>
-        <li><a href="#careers" onclick="showSection('careers'); return false;">Careers</a></li>
-        <li><a href="#contact" onclick="showSection('contact'); return false;">Contact</a></li>
-        <li><a href="#events" onclick="showSection('events'); return false;">Events</a></li>
-        <!-- ✅ Contact button for mobile -->
-        <li class="mobile-contact">
-          <a href="#contact" onclick="showSection('contact'); return false;" class="contact-btn">Get in Touch</a>
-        </li>
-      </ul>
-    </nav>
-
-    <!-- ✅ Desktop-only contact button -->
-    <a href="#contact" onclick="showSection('contact'); return false;" class="contact-btn desktop-contact">
-      Get in Touch
-    </a>
-  </div>
-</header>
-
-<script>
-  function toggleMenu() {
-    const menu = document.querySelector('.nav-menu');
-    const burger = document.querySelector('.hamburger');
-    menu.classList.toggle('active');
-    burger.textContent = menu.classList.contains('active') ? '✖' : '☰';
-  }
-</script>
-
-
-
-
-  <!-- Hero Section -->
-<section class="hero-section">
-  <video autoplay loop muted playsinline class="hero-video">
-    <source src="electronicspcb.mp4" type="video/mp4">
-    Your browser does not support the video tag.
-  </video>
-  <div class="hero-text">
-    <h1>Making Ideas Happen</h1>
-    <button class="quote-btn" onclick="showSection('contact')">Request Quote</button>
-  </div>
-</section>
-
-
-  <!-- ====== Home Section (Combined) ====== -->
-<div id="home" class="section active home-section">
-  <h2>Welcome to Prepreg Technologies</h2>
-  <p>
-    At <strong>Prepreg Technologies Pvt. Ltd.</strong>, we bring innovation in chip design, embedded systems, and EDA tool development, delivering high-quality solutions for industries worldwide. 
+  <!-- Home Section -->
+  <section class="home-section">
+    <h2>Welcome to Prepreg Technologies</h2>
+    <p>
+      At <strong>Prepreg Technologies Pvt. Ltd.</strong>, we bring innovation in chip design, embedded systems, and EDA tool development, delivering high-quality solutions for industries worldwide. 
     Our expertise includes schematic design capture using OrCAD and Altium, schematic review and verification, procurement and assembly BoM services, PCB design and Gerber generation with Allegro and Altium (supporting up to 28-layer boards), signal integrity and power integrity analysis, Ansys simulation, FAB and CAM support, PCBA support, board bring-up and testing, embedded software development, thermal simulation, web development, RF, digital and analog circuit design, and precise PCB library (footprint) creation. 
     With our end-to-end capabilities, we ensure every project meets the highest quality standards from concept to production.
   </p>
+    </p>
 
-  <!-- ====== Featured Projects ====== -->
-  <div class="projects">
-    <h2>Featured Projects</h2>
+    <!-- Featured Projects -->
     <div class="projects-grid">
       <div class="project-card">
-        <img src="project1.jpg" alt="High-Speed PCB Design">
-        <h3>High-Speed PCB Design</h3>
-        <p>Advanced multi-layer PCB designed with signal integrity analysis for industrial automation.</p>
+        <img src="assets/project1.jpg" alt="Project 1">
+        <h3>Smart Manufacturing</h3>
+        <p>Advanced automation systems tailored for your business.</p>
       </div>
       <div class="project-card">
-        <img src="project2.jpg" alt="Embedded Motor Control">
-        <h3>Embedded Motor Control System</h3>
-        <p>Custom embedded firmware with real-time monitoring for brushless motor applications.</p>
-      </div>
-      <div class="project-card">
-        <img src="project3.jpg" alt="RF & Analog PCB Solution">
-        <h3>RF & Analog PCB Solution</h3>
-        <p>Optimized RF circuit design with precision analog performance for communication systems.</p>
+        <img src="assets/project2.jpg" alt="Project 2">
+        <h3>Green Energy</h3>
+        <p>Innovative renewable solutions for a sustainable future.</p>
       </div>
     </div>
-  </div>
 
-  <!-- ====== Why Choose Us ====== -->
-  <div class="why-choose">
-    <h2>Why Choose Us</h2>
-    <ul>
-      <li>Industry Expert Experience</li>
-      <li>Cutting-Edge Technology</li>
-      <li>Global Client Base</li>
-      <li>ISO Certified Processes</li>
-      <li>Custom End-to-End Solutions</li>
-    </ul>
-  </div>
+    <!-- Why Choose Us -->
+    <div class="why-choose">
+      <h2>Why Choose Us</h2>
+      <ul>
+        <li>✔ Cutting-edge technology solutions</li>
+        <li>✔ Global expertise & trusted partnerships</li>
+        <li>✔ Proven track record in innovation</li>
+      </ul>
+    </div>
 
-  <!-- ====== Testimonials ====== -->
-  <div class="testimonials">
-    <h2>What Our Clients Say</h2>
+    <!-- Testimonials -->
     <div class="testimonials-grid">
       <div class="testimonial-card">
-        <p>"Prepreg Technologies delivered our project ahead of schedule with exceptional quality. Highly recommended!"</p>
-        <h4>- Tech Innovations Ltd.</h4>
+        "Prepreg Technologies transformed our production process."
+        <br>– Client A
       </div>
       <div class="testimonial-card">
-        <p>"Their PCB design expertise is unmatched. We’ve partnered with them for multiple high-speed designs."</p>
-        <h4>- ElectroWorks Pvt. Ltd.</h4>
-      </div>
-      <div class="testimonial-card">
-        <p>"Professional, detail-oriented, and innovative. Our go-to for all embedded solutions."</p>
-        <h4>- FutureTech Systems</h4>
+        "Reliable, professional, and truly innovative."
+        <br>– Client B
       </div>
     </div>
-    <div class="client-logos">
-      <img src="logo1.png" alt="Client 1">
-      <img src="logo2.png" alt="Client 2">
-      <img src="logo3.png" alt="Client 3">
-      <img src="logo4.png" alt="Client 4">
-    </div>
-  </div>
-</div>
 
+    <!-- Client Logos -->
+    <div class="client-logos">
+      <img src="assets/client1.png" alt="Client 1">
+      <img src="assets/client2.png" alt="Client 2">
+      <img src="assets/client3.png" alt="Client 3">
+    </div>
+  </section>
+
+  <!-- Services Section -->
   <div id="services" class="section">
     <section class="services">
       <h1>Services</h1>
       <p>At Prepreg Technologies, we offer comprehensive electronics design services covering every stage from concept to production. Our expertise includes schematic capture, high-speed PCB design, mixed-signal board design, FPGA board design, and high-current PCB design. We provide advanced pre-design support such as Signal Integrity (SI) and Power Integrity (PI) analysis, along with Ansys simulations to ensure optimal performance. Our post-design services include fabrication and CAM support, bare board validation, and complete assembly assistance. With a focus on precision, quality, and timely delivery, we ensure every project meets the highest industry standards.</p>
     </section>
-
     <section class="key-tech">
       <h2>We offer design services which includes:</h2>
       <ul>
@@ -242,23 +211,21 @@
     </section>
   </div>
 
-   <div id="products" class="section">
-  <h2>Our Products</h2>
-  <p>We offer advanced electronics products tailored for industry needs and modern applications.</p>
 
-  <div class="products-container">
-    <!-- Product 1 -->
-    <div class="product-card">
-      <h2>Accelerator Board – AMD Zynq UltraScale+ MPSoC</h2>
+  <!-- Products Section -->
+  <section id="products">
+    <h2>Our Products</h2>
+    <div class="products-container">
+      <div class="product-card">
+        <img src="Drone_edited-Picsart-AiImageEnhancer.png" alt="Product 1">
+         <h2>Accelerator Board – AMD Zynq UltraScale+ MPSoC</h2>
       <p>
         Our high-performance accelerator platform is built around the powerful AMD Zynq UltraScale+ MPSoC (XCZU5EV-1SFVC784), 
         offering a heterogeneous computing environment combining software programmability with hardware acceleration. 
         Ideal for advanced embedded applications, AI, vision systems, and high-throughput processing.
       </p>
-      <h3>Hardware Overview</h3>
-      <img src="Drone_edited-Picsart-AiImageEnhancer.png" alt="AMD Zynq UltraScale+ MPSoC Board">
-      <h3>Applications</h3>
-      <ul>
+        <h3>Features</h3>
+        <ul>
         <li>Autonomous Vehicles & Drones</li>
         <li>Surveillance & Security Systems</li>
         <li>AI Inference at the Edge</li>
@@ -266,57 +233,56 @@
         <li>Medical Imaging & Diagnostics</li>
         <li>Defense and Tactical Vision Systems</li>
       </ul>
-    </div>
-
-    <!-- Product 2 -->
-    <div class="product-card">
-      <h2>Artix-7 FPGA Based Intelligent Data Acquisition & Control System</h2>
+      </div>
+      <div class="product-card">
+        <img src="Enhancing_Artix_Board-Picsart-AiImageEnhancer.png" alt="Product 2">
+        <h2>Artix-7 FPGA Based Intelligent Data Acquisition & Control System</h2>
       <p>
         Our compact, high-performance board powered by the Xilinx Artix-7 FPGA (XC7A100T-1FGG484I) is engineered for 
         robust analog signal processing, real-time control, industrial automation, and edge data logging applications.
       </p>
-      <h3>Hardware Overview</h3>
-      <img src="Enhancing_Artix_Board-Picsart-AiImageEnhancer.png" alt="Artix-7 FPGA Board">
-    </div>
-
-    <!-- Product 3 -->
-    <div class="product-card">
-      <h2>STM32F103RBT6-Based HMI Controller Board</h2>
+        <h3>Features</h3>
+        <ul>
+          <li>Scalable technology</li>
+          <li>Smart integration</li>
+          <li>Proven performance</li>
+        </ul>
+      </div>
+      <div class="product-card">
+        <img src="Stm32_touch_screen.png" alt="Product 2">
+        <h2>STM32F103RBT6-Based HMI Controller Board</h2>
       <p>
         Designed for industrial and embedded applications, this compact HMI controller integrates the powerful STM32F103RBT6 ARM Cortex-M3, 
         high-speed serial interfaces, and touch display support.
       </p>
-      <h3>Hardware Overview</h3>
-      <img src="Stm32_touch_screen.png" alt="STM32F103RBT6 HMI Controller Board">
+        <h3>Features</h3>
+        <ul>
+          <li>Scalable technology</li>
+          <li>Smart integration</li>
+          <li>Proven performance</li>
+        </ul>
+      </div>
     </div>
-  </div>
-</div>
+  </section>
 
-
-
-  <div id="about" class="section">
-  <h2>About Us</h2>
+  <!-- About Section -->
+  <section id="about">
+     <h2>About Us</h2>
   <p>
     <b>Founded in the year 2025, Prepreg Technologies</b> offers electronics design services at both inhouse and onsite. We are experts in Schematic capture, High Speed board design, Mixed signal board design, FPGA board design and High current board design. We are focused on providing quality layout design and guaranteed on-time delivery. In addition, we also give pre-design support such as SI/PI and Thermal Simulation; Post-design support such as Fab and CAM support, Bare board validation, Assembly and PCB Manufacturing prototypes and production.	
   </p>
-
-  <!-- Management Team -->
-  <h3>Management Team</h3>
-  <div class="team-container">
-    <div class="team-member">
+    <div class="team-container">
+      <div class="team-member">
       <img src="images/ceo.jpg" alt="CEO" />
       <h4>Anuraj T Rao</h4>
       <p>Founder & CEO</p>
     </div>
-    
-  </div>
+    </div>
+  </section>
 
-  
-</div>
-
-<!-- Careers Section -->
-<div id="careers" class="section">
-  <h2>Careers</h2>
+  <!-- Careers Section -->
+  <div id="careers" class="section">
+ 
   <section class="careers">
     <div class="container">
       <h2>Careers at Prepreg Technologies</h2>
@@ -387,31 +353,22 @@ document.getElementById("applicationForm").addEventListener("submit", function(e
 </script>
 
 
-  <div id="contact" class="section">
-    <h2>Contact Us</h2>
-    <p>Email: prepregtechnologies@gmail.com<br>Phone: +91 9880560279</p>
-  </div>
-
-  <div id="events" class="section">
-    <h2>Our Events</h2>
-  <p class="events-intro">
-    Discover our expertise through exhibitions, workshops, and seminars. Here are some highlights.
-  </p>
-
-  <div class="events-container">
-    <!-- Event Card 1 -->
-  <div class="event-card">
-  <!-- Event Image Gallery -->
-  <div class="event-gallery">
-    <img src="WhatsApp Image 2025-08-22 at 14.56.28.jpeg" alt="Independence Day Celebration 1">
-    <img src="WhatsApp Image 2025-08-22 at 14.56.29 (1).jpeg" alt="Independence Day Celebration 2">
-    <img src="WhatsApp Image 2025-08-22 at 14.56.29 (2).jpeg" alt="Independence Day Celebration 3">
-    <img src="WhatsApp Image 2025-08-22 at 14.56.29.jpeg" alt="Independence Day Celebration 3">
-  </div>
-
-  <!-- Event Info -->
-  <div class="event-content">
-    <h3>Independence Day 2025</h3>
+  <!-- Events Section -->
+  <section id="events" class="events-section">
+    <h2>Latest Events</h2>
+    <p class="events-intro">
+      Stay updated with our latest events, conferences, and exhibitions.
+    </p>
+    <div class="events-container">
+      <div class="event-card">
+        <div class="event-gallery">
+          <img src="WhatsApp Image 2025-08-22 at 14.56.28.jpeg" alt="Event 1a">
+          <img src="WhatsApp Image 2025-08-22 at 14.56.29 (1).jpeg" alt="Event 1b">
+          <img src="WhatsApp Image 2025-08-22 at 14.56.29 (2).jpeg" alt="Event 1b">
+          <img src="WhatsApp Image 2025-08-22 at 14.56.29.jpeg" alt="Event 1b">
+        </div>
+        <div class="event-content">
+           <h3>Independence Day 2025</h3>
     <span class="event-date">August 15, 2025</span>
     <p>
       Prepreg Technologies proudly celebrated Independence Day 2025 with team
@@ -420,13 +377,25 @@ document.getElementById("applicationForm").addEventListener("submit", function(e
       of our latest PCB design and embedded solutions.
     </p>
     <p><strong>Organized by:</strong> Prepreg Technologies</p>
-  </div>
-  </div>
+        </div>
+      </div>
+    </div>
+  </section>
 
-  </div>
-  </div>
+  <!-- Contact Section -->
+  <section id="contact">
+    <h2>Contact Us</h2>
+    <p>We’d love to hear from you. Get in touch today!</p>
+    <form>
+      <input type="text" placeholder="Your Name" required />
+      <input type="email" placeholder="Your Email" required />
+      <textarea placeholder="Your Message" rows="5"></textarea>
+      <button type="submit">Send Message</button>
+    </form>
+  </section>
 
-  <!-- Footer -->
+  <!-- Footer (unchanged as per your request) -->
+   <!-- Footer -->
   <footer class="site-footer">
     <div class="footer-container">
       <div class="footer-column">
@@ -500,28 +469,13 @@ document.getElementById("applicationForm").addEventListener("submit", function(e
     </div>
   </footer>
 
-  <!-- JavaScript to toggle sections -->
   <script>
-    function showSection(id) {
-      const sections = document.querySelectorAll('.section');
-      sections.forEach(sec => sec.classList.remove('active'));
-      document.getElementById(id).classList.add('active');
-      window.scrollTo(0, 0);
-    }
+    // Mobile menu toggle
+    const hamburger = document.querySelector('.hamburger');
+    const navMenu = document.querySelector('.nav-menu');
+    hamburger.addEventListener('click', () => {
+      navMenu.classList.toggle('active');
+    });
   </script>
-
 </body>
 </html>
-
-
-
-
-
-
-
-
-
-
-
-
-
