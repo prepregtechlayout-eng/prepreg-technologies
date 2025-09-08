@@ -46,7 +46,7 @@ section {
    Header & Navigation
    ========================== */
 .header-bar {
-  background: rgb(140, 236, 44);
+  background: linear-gradient(90deg, #f8f7f8, #00d458);
   box-shadow: 0 2px 5px rgba(6, 100, 231, 0.1);
   position: sticky;
   top: 0;
@@ -615,3 +615,4 @@ section {
   .desktop-contact { display: none; }
   .mobile-contact { display: inline-block; }
 }
+
