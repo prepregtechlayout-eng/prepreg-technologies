@@ -127,7 +127,7 @@ footer {
 
 /* Header Bar */
 .header-bar {
-  background: #f5f50a;
+  background: #63c1f0;
   padding: 0.5rem 2rem;
   position: fixed;   
   top: 0;            
@@ -805,3 +805,4 @@ h3 {
     display: block;
   }
 }
+
