@@ -186,6 +186,10 @@ section {
   margin: 8px 0;
   font-weight: 500;
 }
+.why-choose li:hover {
+  transform: translateX(5px);
+  color: #003366;
+}
 .testimonials-grid {
   display: flex;
   gap: 20px;
@@ -615,6 +619,7 @@ section {
   .desktop-contact { display: none; }
   .mobile-contact { display: inline-block; }
 }
+
 
 
 
