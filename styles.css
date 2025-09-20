@@ -548,14 +548,14 @@ section {
 .social-links {
   display: flex;
   flex-direction: column;
-  align-items: center;   /* center horizontally */
+  align-items: left;   /* center horizontally */
   gap: 10px;             /* spacing between items */
   margin-top: 8px;
 }
 
 .social-links a {
   display: flex;
-  align-items: center;
+  align-items: left;
   color: white;
   text-decoration: none;
   font-size: 14px;
@@ -661,6 +661,7 @@ section {
   from { transform: scale(0.7); opacity: 0; }
   to { transform: scale(1); opacity: 1; }
 }
+
 
 
 
