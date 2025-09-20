@@ -22,73 +22,87 @@
   <meta name="theme-color" content="#ffffff">
   <meta name="background-color" content="#ffffff">
 
-  <!-- ✅ Organization Schema with Logo -->
-  <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@type": "Organization",
-    "name": "Prepreg Technologies Private Limited",
-    "url": "https://prepregtechnologies.com/",
-    "logo": "https://prepregtechnologies.com/favicon-96x96.png",
-    "contactPoint": {
-      "@type": "ContactPoint",
-      "telephone": "+91-9880560279",
-      "contactType": "customer service",
-      "email": "prepregtechnologies@gmail.com",
-      "areaServed": "IN"
-    }
+  <!-- ✅ Organization Schema -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "name": "Prepreg Technologies Private Limited",
+  "legalName": "Prepreg Technologies Private Limited",
+  "url": "https://prepregtechnologies.com/",
+  "logo": "https://prepregtechnologies.com/logo-192.png",
+  "sameAs": [
+    "https://www.linkedin.com/company/prepreg-technologies",
+    "https://twitter.com/prepregtech"
+  ],
+  "contactPoint": {
+    "@type": "ContactPoint",
+    "telephone": "+91-9880560279",
+    "contactType": "customer service",
+    "email": "prepregtechnologies@gmail.com",
+    "areaServed": "IN",
+    "availableLanguage": ["English", "Hindi"]
   }
-  </script>
+}
+</script>
 
-  <!-- ✅ Website Schema for SearchAction -->
-  <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@type": "WebSite",
-    "url": "https://prepregtechnologies.com/",
-    "name": "Prepreg Technologies",
-    "potentialAction": {
-      "@type": "SearchAction",
-      "target": "https://prepregtechnologies.com/?q={search_term_string}",
-      "query-input": "required name=search_term_string"
-    }
+<!-- ✅ Website Schema with Search -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebSite",
+  "url": "https://prepregtechnologies.com/",
+  "name": "Prepreg Technologies Private Limited",
+  "potentialAction": {
+    "@type": "SearchAction",
+    "target": "https://prepregtechnologies.com/?q={search_term_string}",
+    "query-input": "required name=search_term_string"
   }
-  </script>
+}
+</script>
 
-  <!-- ✅ Site Navigation Schema (helps with sitelinks) -->
-  <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@type": "SiteNavigationElement",
-    "name": ["Home","About","Services","Products","Careers","Contact","Events"],
-    "url": [
-      "https://prepregtechnologies.com/#home",
-      "https://prepregtechnologies.com/#about",
-      "https://prepregtechnologies.com/#services",
-      "https://prepregtechnologies.com/#products",
-      "https://prepregtechnologies.com/#careers",
-      "https://prepregtechnologies.com/#contact",
-      "https://prepregtechnologies.com/#events"
-    ]
-  }
-  </script>
+<!-- ✅ Site Navigation Schema -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "SiteNavigationElement",
+  "name": [
+    "Home",
+    "About",
+    "Services",
+    "Products",
+    "Careers",
+    "Contact",
+    "Events"
+  ],
+  "url": [
+    "https://prepregtechnologies.com/#home",
+    "https://prepregtechnologies.com/#about",
+    "https://prepregtechnologies.com/#services",
+    "https://prepregtechnologies.com/#products",
+    "https://prepregtechnologies.com/#careers",
+    "https://prepregtechnologies.com/#contact",
+    "https://prepregtechnologies.com/#events"
+  ]
+}
+</script>
 
-  <!-- ✅ Breadcrumb Schema -->
-  <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@type": "BreadcrumbList",
-    "itemListElement": [
-      { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://prepregtechnologies.com/#home" },
-      { "@type": "ListItem", "position": 2, "name": "About", "item": "https://prepregtechnologies.com/#about" },
-      { "@type": "ListItem", "position": 3, "name": "Services", "item": "https://prepregtechnologies.com/#services" },
-      { "@type": "ListItem", "position": 4, "name": "Products", "item": "https://prepregtechnologies.com/#products" },
-      { "@type": "ListItem", "position": 5, "name": "Careers", "item": "https://prepregtechnologies.com/#careers" },
-      { "@type": "ListItem", "position": 6, "name": "Contact", "item": "https://prepregtechnologies.com/#contact" },
-      { "@type": "ListItem", "position": 7, "name": "Events", "item": "https://prepregtechnologies.com/#events" }
-    ]
-  }
-  </script>
+<!-- ✅ Breadcrumb Schema -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://prepregtechnologies.com/#home" },
+    { "@type": "ListItem", "position": 2, "name": "About", "item": "https://prepregtechnologies.com/#about" },
+    { "@type": "ListItem", "position": 3, "name": "Services", "item": "https://prepregtechnologies.com/#services" },
+    { "@type": "ListItem", "position": 4, "name": "Products", "item": "https://prepregtechnologies.com/#products" },
+    { "@type": "ListItem", "position": 5, "name": "Careers", "item": "https://prepregtechnologies.com/#careers" },
+    { "@type": "ListItem", "position": 6, "name": "Contact", "item": "https://prepregtechnologies.com/#contact" },
+    { "@type": "ListItem", "position": 7, "name": "Events", "item": "https://prepregtechnologies.com/#events" }
+  ]
+}
+</script>
 </head>
 
 <body>
@@ -139,7 +153,7 @@
   <section class="home-section">
     <h2>Welcome to Prepreg Technologies</h2>
     <p>
-      At <strong>Prepreg Technologies Pvt. Ltd.</strong>, we bring innovation in chip design, embedded systems, and EDA tool development, delivering high-quality solutions for industries worldwide. 
+      At <strong>Prepreg Technologies Pvt. Ltd.</strong>, we bring innovation in chip design, embedded systems, and product development, delivering high-quality solutions for industries worldwide. 
     Our expertise includes schematic design capture using OrCAD and Altium, schematic review and verification, procurement and assembly BoM services, PCB design and Gerber generation with Allegro and Altium (supporting up to 28-layer boards), signal integrity and power integrity analysis, Ansys simulation, FAB and CAM support, PCBA support, board bring-up and testing, embedded software development, thermal simulation, web development, RF, digital and analog circuit design, and precise PCB library (footprint) creation. 
     With our end-to-end capabilities, we ensure every project meets the highest quality standards from concept to production.
   </p>
@@ -279,7 +293,7 @@
   </p>
     <div class="team-container">
       <div class="team-member">
-      <img src="images/ceo.jpg" alt="CEO" />
+      <img src="anuraj.png" alt="CEO" />
       <h4>Anuraj T Rao</h4>
       <p>Founder & CEO</p>
     </div>
@@ -300,7 +314,7 @@
       <div class="job-list">
         <div class="job-card">
           <h3>PCB Designer (Altium & Allegro)</h3>
-          <p><strong>Location:</strong> Hyderabad, India</p>
+          <p><strong>Location:</strong> Bangalore, India</p>
           <p><strong>Experience:</strong> 2-5 years</p>
           <p>We are looking for an experienced PCB Designer to join our team.</p>
           <button class="apply-btn" onclick="openForm('PCB Designer (Altium & Allegro)')">Apply Now</button>
@@ -309,7 +323,7 @@
         <div class="job-card">
           <h3>Embedded Software Engineer</h3>
           <p><strong>Location:</strong> Bangalore, India</p>
-          <p><strong>Experience:</strong> 1-4 years</p>
+          <p><strong>Experience:</strong> 3-4 years</p>
           <p>We need an embedded software engineer with C/C++ experience.</p>
           <button class="apply-btn" onclick="openForm('Embedded Software Engineer')">Apply Now</button>
         </div>
@@ -485,5 +499,6 @@ document.getElementById("applicationForm").addEventListener("submit", function(e
   </script>
 </body>
 </html>
+
 
 
