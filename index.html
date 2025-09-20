@@ -1,12 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
-<head> 
+<head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
   <!-- SEO Title & Description -->
-  <title>Prepreg Technologies Pvt. Ltd. | PCB Design, Embedded Systems & Chip Solutions</title>
-  <meta name="description" content="Prepreg Technologies offers expert PCB design, embedded systems, FPGA boards, and chip design services. Trusted by global clients for innovation, quality, and end-to-end electronic solutions.">
+  <title>Prepreg Technologies Private Limited | PCB Design, Embedded Systems & Chip Solutions</title>
+  <meta name="description" content="Prepreg Technologies Private Limited offers PCB design, embedded systems, FPGA boards, and chip design services. Trusted by global clients for innovation, quality, and turnkey electronic solutions.">
 
   <!-- Stylesheet -->
   <link rel="stylesheet" href="styles.css">
@@ -22,11 +22,26 @@
   <meta name="theme-color" content="#ffffff">
   <meta name="background-color" content="#ffffff">
 
+  <!-- ✅ Open Graph -->
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Prepreg Technologies Private Limited">
+  <meta property="og:title" content="Prepreg Technologies Private Limited | PCB Design, Embedded Systems & Chip Solutions">
+  <meta property="og:description" content="Prepreg Technologies provides PCB design, embedded systems, FPGA boards, and chip design services. Trusted for innovation, quality, and turnkey electronic solutions.">
+  <meta property="og:image" content="https://prepregtechnologies.com/logo-512.png">
+  <meta property="og:url" content="https://prepregtechnologies.com/">
+
+  <!-- ✅ Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Prepreg Technologies Private Limited">
+  <meta name="twitter:description" content="PCB design, embedded systems, FPGA boards, and chip solutions.">
+  <meta name="twitter:image" content="https://prepregtechnologies.com/logo-512.png">
+
   <!-- ✅ Organization Schema -->
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
   "@type": "Organization",
+  "@id": "https://prepregtechnologies.com/#organization",
   "name": "Prepreg Technologies Private Limited",
   "legalName": "Prepreg Technologies Private Limited",
   "url": "https://prepregtechnologies.com/",
@@ -51,8 +66,10 @@
 {
   "@context": "https://schema.org",
   "@type": "WebSite",
+  "@id": "https://prepregtechnologies.com/#website",
   "url": "https://prepregtechnologies.com/",
   "name": "Prepreg Technologies Private Limited",
+  "publisher": { "@id": "https://prepregtechnologies.com/#organization" },
   "potentialAction": {
     "@type": "SearchAction",
     "target": "https://prepregtechnologies.com/?q={search_term_string}",
@@ -66,15 +83,7 @@
 {
   "@context": "https://schema.org",
   "@type": "SiteNavigationElement",
-  "name": [
-    "Home",
-    "About",
-    "Services",
-    "Products",
-    "Careers",
-    "Contact",
-    "Events"
-  ],
+  "name": ["Home","About","Services","Products","Careers","Contact","Events"],
   "url": [
     "https://prepregtechnologies.com/#home",
     "https://prepregtechnologies.com/#about",
@@ -497,8 +506,46 @@ document.getElementById("applicationForm").addEventListener("submit", function(e
       navMenu.classList.toggle('active');
     });
   </script>
+
+  <!-- Lightbox structure -->
+<div id="lightbox" class="lightbox">
+  <span class="lightbox-close">&times;</span>
+  <img id="lightbox-img" src="" alt="Preview">
+</div>
+<script>
+  const lightbox = document.getElementById("lightbox");
+  const lightboxImg = document.getElementById("lightbox-img");
+  const closeBtn = document.querySelector(".lightbox-close");
+
+  // Select all images inside projects, products, events, team
+  const images = document.querySelectorAll(
+    ".project-card img, .product-card img, .event-gallery img, .team-member img"
+  );
+
+  images.forEach(img => {
+    img.style.cursor = "pointer"; // show hand icon
+    img.addEventListener("click", () => {
+      lightbox.style.display = "flex";
+      lightboxImg.src = img.src;
+    });
+  });
+
+  // Close on X button
+  closeBtn.addEventListener("click", () => {
+    lightbox.style.display = "none";
+  });
+
+  // Close when clicking outside image
+  lightbox.addEventListener("click", (e) => {
+    if (e.target !== lightboxImg) {
+      lightbox.style.display = "none";
+    }
+  });
+</script>
+
 </body>
 </html>
+
 
 
 
