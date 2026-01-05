@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Products | Prepreg Technologies Private Limited</title>
+  <meta name="description" content="FPGA boards, accelerator platforms, and embedded product solutions by Prepreg Technologies.">
+
+  <link rel="stylesheet" href="styles.css">
+  <link rel="icon" href="/favicon.ico">
+</head>
+<body>
+
+<!-- ================= HEADER (SAME) ================= -->
+<header class="header-bar">
+  <div class="header-container">
+    <div class="logo">
+      <img src="anuraj_prepreg_ratio_3_sqare-1.png" alt="Company Logo" />
+      <span class="logo-text">Prepreg <span>Technologies</span></span>
+      <span class="logo-subtext">Innovating Tomorrow</span>
+    </div>
+
+    <nav class="nav-menu">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="services.html">Services</a></li>
+        <li><a href="products.html" class="active">Products</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="careers.html">Careers</a></li>
+        <li><a href="events.html">Events</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+      <a href="contact.html" class="contact-btn desktop-contact">Get in Touch</a>
+    </nav>
+
+    <div class="hamburger">&#9776;</div>
+  </div>
+</header>
+
+<!-- ================= PRODUCTS SECTION ================= -->
+<section id="products">
+  <h2>Our Products</h2>
+
+  <div class="products-container">
+
+    <!-- Product 1 -->
+    <div class="product-card">
+      <img src="Drone_edited-Picsart-AiImageEnhancer.png" alt="Accelerator Board">
+      <h2>Accelerator Board – AMD Zynq UltraScale+ MPSoC</h2>
+      <p>
+        Our high-performance accelerator platform is built around the powerful
+        AMD Zynq UltraScale+ MPSoC (XCZU5EV-1SFVC784), offering heterogeneous
+        computing for AI, vision systems, and high-throughput processing.
+      </p>
+      <h3>Applications</h3>
+      <ul>
+        <li>Autonomous Vehicles & Drones</li>
+        <li>Surveillance & Security Systems</li>
+        <li>AI Inference at the Edge</li>
+        <li>Industrial Automation & Robotics</li>
+        <li>Medical Imaging & Diagnostics</li>
+        <li>Defense & Tactical Vision Systems</li>
+      </ul>
+    </div>
+
+    <!-- Product 2 -->
+    <div class="product-card">
+      <img src="Enhancing_Artix_Board-Picsart-AiImageEnhancer.png" alt="Artix-7 FPGA Board">
+      <h2>Artix-7 FPGA Based Intelligent Data Acquisition & Control System</h2>
+      <p>
+        Compact high-performance board powered by Xilinx Artix-7 FPGA
+        (XC7A100T-1FGG484I) engineered for analog signal processing,
+        real-time control, and industrial automation.
+      </p>
+      <h3>Features</h3>
+      <ul>
+        <li>Scalable technology</li>
+        <li>Smart integration</li>
+        <li>Proven performance</li>
+      </ul>
+    </div>
+
+    <!-- Product 3 -->
+    <div class="product-card">
+      <img src="Stm32_touch_screen.png" alt="STM32 HMI Board">
+      <h2>STM32F103RBT6-Based HMI Controller Board</h2>
+      <p>
+        Designed for industrial and embedded applications, this compact HMI
+        controller integrates the STM32F103RBT6 ARM Cortex-M3,
+        high-speed serial interfaces, and touch display support.
+      </p>
+      <h3>Features</h3>
+      <ul>
+        <li>Reliable industrial design</li>
+        <li>Touch-screen ready</li>
+        <li>Low-power embedded control</li>
+      </ul>
+    </div>
+
+  </div>
+</section>
+
+<!-- ================= LIGHTBOX ================= -->
+<div id="lightbox" class="lightbox">
+  <span class="lightbox-close">&times;</span>
+  <img id="lightbox-img" src="" alt="Preview">
+</div>
+
+<!-- ================= FOOTER (SAME) ================= -->
+<footer class="site-footer">
+  <div class="footer-container">
+
+    <div class="footer-column">
+      <h4>Our Head Office</h4>
+      <p>
+        Prepreg Technologies,<br>
+        XM64+48M, Murugeshpalya,<br>
+        Nanja Reddy Colony,<br>
+        Bangalore - 560017.
+      </p>
+      <p>
+        <strong>Phone:</strong> +91 9880560279<br>
+        <strong>Email:</strong> sales.mkt@prepregtechnologies.com
+      </p>
+    </div>
+
+    <div class="footer-column">
+      <ul>
+        <li><a href="about.html">About</a></li>
+        <li><a href="services.html">Board Design</a></li>
+        <li><a href="careers.html">Careers</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a href="products.html">Products</a></li>
+      </ul>
+    </div>
+
+    <div class="footer-column social">
+      <h4>Follow us</h4>
+      <a href="https://www.linkedin.com/company/prepreg-technologies-private-limited/" target="_blank">LinkedIn</a>
+    </div>
+
+  </div>
+
+  <div class="copyright">
+    Copyrights © 2025 Prepreg Technologies Pvt Ltd
+  </div>
+</footer>
+
+<!-- ================= SCRIPTS ================= -->
+<script>
+  // Hamburger menu
+  const hamburger = document.querySelector('.hamburger');
+  const navMenu = document.querySelector('.nav-menu');
+
+  hamburger.addEventListener('click', () => {
+    navMenu.classList.toggle('active');
+  });
+
+  // Lightbox
+  const lightbox = document.getElementById("lightbox");
+  const lightboxImg = document.getElementById("lightbox-img");
+  const closeBtn = document.querySelector(".lightbox-close");
+  const images = document.querySelectorAll(".product-card img");
+
+  images.forEach(img => {
+    img.style.cursor = "pointer";
+    img.addEventListener("click", () => {
+      lightbox.style.display = "flex";
+      lightboxImg.src = img.src;
+    });
+  });
+
+  closeBtn.addEventListener("click", () => {
+    lightbox.style.display = "none";
+  });
+
+  lightbox.addEventListener("click", (e) => {
+    if (e.target !== lightboxImg) {
+      lightbox.style.display = "none";
+    }
+  });
+</script>
+
+</body>
+</html>
