@@ -144,25 +144,7 @@ section {
   font-size: 0.8rem;
   color: #333;
 }
-@media(max-width:768px){
 
-    .logo{
-        flex-direction:column;
-    }
-    .logo-text{
-        flex-direction:column;
-    }
-    .logo-subtext{
-        flex-direction:column;
-    }
-    .logo-text span{
-        flex-direction:column;
-    }
-    .logo img{
-        width:100%;
-        height:auto;
-    }
-}
 /* ==========================
    Certification
 ========================== */
@@ -194,25 +176,7 @@ section {
   font-size: 0.8rem;
   color: #333;
 }
-@media(max-width:768px){
 
-    .certification{
-        flex-direction:column;
-    }
-    .certification-text{
-        flex-direction:column;
-    }
-    .certification-subtext{
-        flex-direction:column;
-    }
-    .certification-text span{
-        flex-direction:column;
-    }
-    .certification img{
-        width:100%;
-        height:auto;
-    }
-}
 /* ==========================
    Navigation
 ========================== */
