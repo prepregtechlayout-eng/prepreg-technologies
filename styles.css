@@ -144,7 +144,35 @@ section {
   font-size: 0.8rem;
   color: #333;
 }
+/* ==========================
+   Certification
+========================== */
+.certification {
 
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.certification-text {
+
+  font-size: 1.4rem;
+  font-weight: 700;
+  color: black
+}
+
+
+.certification-text span {
+
+  color: var(--secondary-red);
+}
+
+
+.certification-subtext {
+
+  font-size: 0.8rem;
+  color: #333;
+}
 
 /* ==========================
    Navigation
