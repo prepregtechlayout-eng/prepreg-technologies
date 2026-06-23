@@ -164,7 +164,8 @@ section {
 
 .certification-text span {
 
-  color: var(--secondary-red);
+  font-weight: 700;
+   color: black
 }
 
 
