@@ -165,7 +165,8 @@ section {
 .certification-text span {
 
   font-weight: 700;
-   color: black
+  color: black
+  
 }
 
 
@@ -174,7 +175,6 @@ section {
   font-size: 0.8rem;
   color: #333;
 }
-
 /* ==========================
    Navigation
 ========================== */
