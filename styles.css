@@ -978,130 +978,948 @@ section {
 }
 
 
-/* ==========================
-   Responsive Design
-========================== */
+/* =========================================================
+   PROFESSIONAL RESPONSIVE DESIGN
+========================================================= */
 
+/* ---------- Tablets & Small Laptops ---------- */
 
-@media (max-width:900px) {
+@media (max-width: 1100px) {
 
+    .header-container {
+        padding: 15px 5%;
+    }
 
-.projects-grid,
-.products-container,
-.job-list,
-.footer-container {
+    section {
+        padding: 70px 5%;
+    }
 
-flex-direction: column;
+    .projects-grid,
+    .products-container {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 25px;
+    }
 
-}
+    .job-list {
+        gap: 25px;
+    }
 
+    .footer-container {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 35px;
+    }
 
-.event-card {
-
-flex-direction: column;
-
-}
-
-}
-
-
-@media (max-width:768px) {
-
-
-.header-container {
-
-padding: 15px 5%;
-
-}
-
-
-.nav-menu ul {
-
-display: none;
-
-position: absolute;
-
-top: 80px;
-
-right: 15px;
-
-background: white;
-
-flex-direction: column;
-
-padding: 20px;
-
-width: 220px;
-
-box-shadow: var(--shadow);
-
-border-radius: 10px;
+    .event-card {
+        gap: 25px;
+    }
 
 }
 
 
-.nav-menu.active ul {
+/* =========================================================
+   TABLET
+========================================================= */
 
-display: flex;
+@media (max-width: 900px) {
+
+    /* ---------- Header ---------- */
+
+    .header-container {
+        padding: 14px 5%;
+        min-height: 70px;
+    }
+
+    .logo img {
+        max-width: 150px;
+        height: auto;
+    }
+
+
+    /* ---------- Navigation ---------- */
+
+    .nav-menu {
+        position: relative;
+    }
+
+    .nav-menu ul {
+        display: none;
+        position: absolute;
+
+        top: calc(100% + 12px);
+        right: 0;
+
+        width: 240px;
+
+        padding: 12px 0;
+        margin: 0;
+
+        background: #ffffff;
+
+        flex-direction: column;
+        align-items: stretch;
+
+        border-radius: 12px;
+
+        box-shadow: 0 10px 30px rgba(0, 0, 0, 0.12);
+
+        z-index: 9999;
+    }
+
+    .nav-menu.active ul {
+        display: flex;
+    }
+
+    .nav-menu ul li {
+        width: 100%;
+        margin: 0;
+    }
+
+    .nav-menu ul li a {
+        display: block;
+
+        width: 100%;
+
+        padding: 13px 20px;
+
+        color: #333;
+
+        font-size: 15px;
+
+        transition: 0.3s ease;
+    }
+
+    .nav-menu ul li a:hover {
+        background: #f5f7fa;
+        color: var(--primary-color);
+    }
+
+
+    /* ---------- Hamburger ---------- */
+
+    .hamburger {
+        display: flex;
+
+        width: 42px;
+        height: 42px;
+
+        align-items: center;
+        justify-content: center;
+
+        cursor: pointer;
+
+        font-size: 25px;
+
+        border-radius: 8px;
+    }
+
+
+    /* ---------- Contact Button ---------- */
+
+    .contact-btn {
+        display: none;
+    }
+
+
+    /* ---------- Hero ---------- */
+
+    .hero-section {
+        min-height: 65vh;
+        height: auto;
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        padding: 80px 6%;
+    }
+
+    .hero-text {
+        width: 100%;
+        max-width: 700px;
+
+        padding: 25px;
+
+        text-align: center;
+    }
+
+    .hero-text h1 {
+        font-size: clamp(2rem, 5vw, 3rem);
+
+        line-height: 1.15;
+
+        margin-bottom: 18px;
+    }
+
+    .hero-text p {
+        font-size: 16px;
+        line-height: 1.7;
+    }
+
+
+    /* ---------- Page Header ---------- */
+
+    .page-header {
+        padding: 80px 6% 60px;
+        text-align: center;
+    }
+
+    .page-header h1 {
+        font-size: clamp(2rem, 5vw, 2.8rem);
+        line-height: 1.2;
+    }
+
+
+    /* ---------- Sections ---------- */
+
+    section {
+        padding: 65px 6%;
+    }
+
+
+    /* ---------- Projects ---------- */
+
+    .projects-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 25px;
+    }
+
+
+    /* ---------- Products ---------- */
+
+    .products-container {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 25px;
+    }
+
+
+    /* ---------- Events ---------- */
+
+    .event-card {
+        flex-direction: column;
+
+        gap: 20px;
+
+        padding: 20px;
+    }
+
+    .event-card img {
+        width: 100%;
+        max-width: 100%;
+
+        height: auto;
+
+        object-fit: cover;
+    }
+
+
+    /* ---------- Jobs ---------- */
+
+    .job-list {
+        flex-direction: column;
+    }
+
+    .job-card {
+        width: 100%;
+    }
+
+
+    /* ---------- Footer ---------- */
+
+    .footer-container {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 30px;
+    }
 
 }
 
 
-.nav-menu ul li a {
+/* =========================================================
+   MOBILE
+========================================================= */
 
-color: #333;
+@media (max-width: 768px) {
+
+    /* ---------- Global ---------- */
+
+    html {
+        font-size: 15px;
+    }
+
+    body {
+        overflow-x: hidden;
+    }
+
+    section {
+        width: 100%;
+
+        padding: 55px 5%;
+    }
+
+
+    /* ---------- Header ---------- */
+
+    .header-container {
+        width: 100%;
+
+        padding: 12px 5%;
+
+        min-height: 65px;
+
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .logo {
+        max-width: 150px;
+    }
+
+    .logo img {
+        width: 100%;
+        max-width: 145px;
+        height: auto;
+    }
+
+
+    /* ---------- Mobile Navigation ---------- */
+
+    .nav-menu {
+        margin-left: auto;
+    }
+
+    .nav-menu ul {
+
+        top: calc(100% + 10px);
+        right: 0;
+
+        width: min(260px, 88vw);
+
+        padding: 10px 0;
+
+        border-radius: 12px;
+    }
+
+    .nav-menu ul li a {
+
+        padding: 14px 20px;
+
+        font-size: 15px;
+
+        min-height: 44px;
+
+        display: flex;
+        align-items: center;
+    }
+
+
+    /* ---------- Hamburger ---------- */
+
+    .hamburger {
+
+        display: flex;
+
+        width: 44px;
+        height: 44px;
+
+        font-size: 24px;
+
+        align-items: center;
+        justify-content: center;
+
+        border-radius: 8px;
+
+        cursor: pointer;
+    }
+
+
+    /* ---------- Hero ---------- */
+
+    .hero-section {
+
+        min-height: 70vh;
+
+        padding: 70px 5%;
+
+        text-align: center;
+    }
+
+    .hero-text {
+
+        width: 100%;
+
+        max-width: 100%;
+
+        padding: 10px;
+    }
+
+    .hero-text h1 {
+
+        font-size: clamp(1.9rem, 8vw, 2.5rem);
+
+        line-height: 1.15;
+
+        margin-bottom: 15px;
+    }
+
+    .hero-text p {
+
+        font-size: 15px;
+
+        line-height: 1.7;
+
+        margin-bottom: 25px;
+    }
+
+    .hero-text .btn,
+    .hero-text button {
+
+        width: 100%;
+        max-width: 260px;
+
+        min-height: 46px;
+
+        margin: 8px auto;
+
+        display: block;
+    }
+
+
+    /* ---------- Page Header ---------- */
+
+    .page-header {
+
+        padding: 65px 5% 45px;
+
+        text-align: center;
+    }
+
+    .page-header h1 {
+
+        font-size: clamp(1.9rem, 8vw, 2.4rem);
+
+        line-height: 1.2;
+
+        margin-bottom: 12px;
+    }
+
+    .page-header p {
+
+        font-size: 14px;
+
+        line-height: 1.6;
+    }
+
+
+    /* ---------- Section Titles ---------- */
+
+    section h2 {
+
+        font-size: clamp(1.7rem, 7vw, 2.2rem);
+
+        line-height: 1.25;
+
+        margin-bottom: 15px;
+    }
+
+    section > p {
+
+        font-size: 14px;
+
+        line-height: 1.7;
+    }
+
+
+    /* ---------- Projects ---------- */
+
+    .projects-grid {
+
+        display: grid;
+
+        grid-template-columns: 1fr;
+
+        gap: 20px;
+
+        width: 100%;
+    }
+
+    .project-card {
+
+        width: 100%;
+
+        padding: 20px;
+
+        border-radius: 12px;
+    }
+
+    .project-card img {
+
+        width: 100%;
+
+        height: auto;
+
+        max-height: 240px;
+
+        object-fit: cover;
+
+        border-radius: 10px;
+    }
+
+
+    /* ---------- Products ---------- */
+
+    .products-container {
+
+        display: grid;
+
+        grid-template-columns: 1fr;
+
+        gap: 20px;
+
+        width: 100%;
+    }
+
+    .product-card {
+
+        width: 100%;
+
+        display: flex;
+
+        flex-direction: column;
+
+        overflow: hidden;
+
+        border-radius: 12px;
+    }
+
+    .product-card img {
+
+        width: 100%;
+
+        height: 210px;
+
+        object-fit: cover;
+    }
+
+    .product-card-content {
+
+        padding: 20px;
+    }
+
+    .product-card h3 {
+
+        font-size: 1.2rem;
+
+        line-height: 1.3;
+
+        margin-bottom: 10px;
+    }
+
+    .product-card p {
+
+        font-size: 14px;
+
+        line-height: 1.65;
+    }
+
+
+    /* ---------- Events ---------- */
+
+    .event-card {
+
+        width: 100%;
+
+        display: flex;
+
+        flex-direction: column;
+
+        gap: 18px;
+
+        padding: 18px;
+
+        border-radius: 12px;
+    }
+
+    .event-card img {
+
+        width: 100%;
+
+        height: 210px;
+
+        object-fit: cover;
+
+        border-radius: 10px;
+    }
+
+    .event-card-content {
+
+        width: 100%;
+
+        padding: 0;
+    }
+
+    .event-card h3 {
+
+        font-size: 1.2rem;
+
+        line-height: 1.35;
+
+        margin-bottom: 10px;
+    }
+
+    .event-card p {
+
+        font-size: 14px;
+
+        line-height: 1.65;
+    }
+
+
+    /* ---------- Job Section ---------- */
+
+    .job-list {
+
+        display: flex;
+
+        flex-direction: column;
+
+        gap: 18px;
+
+        width: 100%;
+    }
+
+    .job-card {
+
+        width: 100%;
+
+        padding: 20px;
+
+        border-radius: 12px;
+    }
+
+    .job-card h3 {
+
+        font-size: 1.15rem;
+
+        line-height: 1.35;
+    }
+
+    .job-card p {
+
+        font-size: 14px;
+
+        line-height: 1.65;
+    }
+
+    .job-card .btn {
+
+        width: 100%;
+
+        min-height: 44px;
+
+        margin-top: 15px;
+    }
+
+
+    /* ---------- About / Contact ---------- */
+
+    .about-container,
+    .contact-container {
+
+        display: flex;
+
+        flex-direction: column;
+
+        gap: 30px;
+
+        width: 100%;
+    }
+
+    .about-content,
+    .about-image,
+    .contact-info,
+    .contact-form {
+
+        width: 100%;
+    }
+
+    .about-image img {
+
+        width: 100%;
+
+        height: auto;
+
+        border-radius: 12px;
+    }
+
+
+    /* ---------- Contact Form ---------- */
+
+    .contact-form input,
+    .contact-form textarea,
+    .contact-form select {
+
+        width: 100%;
+
+        min-height: 46px;
+
+        padding: 12px 14px;
+
+        font-size: 15px;
+    }
+
+    .contact-form textarea {
+
+        min-height: 140px;
+
+        resize: vertical;
+    }
+
+    .contact-form button {
+
+        width: 100%;
+
+        min-height: 46px;
+    }
+
+
+    /* ---------- Footer ---------- */
+
+    .footer-container {
+
+        display: grid;
+
+        grid-template-columns: 1fr;
+
+        gap: 30px;
+
+        text-align: center;
+    }
+
+    .footer-column {
+
+        width: 100%;
+    }
+
+    .footer-column ul {
+
+        padding: 0;
+
+        margin: 0;
+
+        list-style: none;
+    }
+
+    .footer-column li {
+
+        margin-bottom: 8px;
+    }
+
+    .social-links {
+
+        justify-content: center;
+    }
+
+
+    /* ---------- Buttons ---------- */
+
+    .btn,
+    button {
+
+        min-height: 44px;
+
+        padding: 11px 20px;
+
+        font-size: 14px;
+    }
+
+
+    /* ---------- Images ---------- */
+
+    img {
+
+        max-width: 100%;
+
+        height: auto;
+    }
 
 }
 
 
-.hamburger {
+/* =========================================================
+   SMALL MOBILE PHONES
+========================================================= */
 
-display: block;
+@media (max-width: 480px) {
+
+    html {
+        font-size: 14px;
+    }
+
+    section {
+        padding: 45px 5%;
+    }
+
+
+    /* Header */
+
+    .header-container {
+        padding: 10px 4%;
+    }
+
+    .logo img {
+        max-width: 125px;
+    }
+
+    .hamburger {
+
+        width: 40px;
+        height: 40px;
+
+        font-size: 22px;
+    }
+
+
+    /* Navigation */
+
+    .nav-menu ul {
+
+        width: calc(100vw - 30px);
+
+        right: -5px;
+
+        max-width: 280px;
+    }
+
+
+    /* Hero */
+
+    .hero-section {
+
+        min-height: 65vh;
+
+        padding: 60px 5%;
+    }
+
+    .hero-text {
+
+        padding: 5px;
+    }
+
+    .hero-text h1 {
+
+        font-size: 1.8rem;
+
+        line-height: 1.2;
+    }
+
+    .hero-text p {
+
+        font-size: 14px;
+
+        line-height: 1.65;
+    }
+
+
+    /* Page Header */
+
+    .page-header {
+
+        padding: 55px 5% 40px;
+    }
+
+    .page-header h1 {
+
+        font-size: 1.8rem;
+    }
+
+
+    /* Section Heading */
+
+    section h2 {
+
+        font-size: 1.65rem;
+    }
+
+
+    /* Cards */
+
+    .project-card,
+    .product-card,
+    .event-card,
+    .job-card {
+
+        border-radius: 10px;
+    }
+
+    .project-card,
+    .job-card {
+
+        padding: 16px;
+    }
+
+    .product-card-content {
+
+        padding: 16px;
+    }
+
+    .event-card {
+
+        padding: 14px;
+    }
+
+
+    /* Images */
+
+    .product-card img,
+    .event-card img {
+
+        height: 190px;
+    }
+
+
+    /* Buttons */
+
+    .btn,
+    button {
+
+        width: 100%;
+
+        min-height: 44px;
+    }
 
 }
 
 
-.contact-btn {
+/* =========================================================
+   EXTRA SMALL PHONES
+========================================================= */
 
-display: none;
+@media (max-width: 360px) {
 
-}
+    .logo img {
+        max-width: 110px;
+    }
 
+    .hamburger {
+        width: 38px;
+        height: 38px;
+    }
 
-.hero-section {
+    .hero-text h1 {
+        font-size: 1.65rem;
+    }
 
-height: 70vh;
+    .page-header h1 {
+        font-size: 1.65rem;
+    }
 
-}
+    section h2 {
+        font-size: 1.5rem;
+    }
 
-
-.hero-text {
-
-width: 90%;
-
-padding: 20px;
-
-}
-
-
-.hero-text h1 {
-
-font-size: 1.8rem;
-
-}
-
-
-.page-header h1 {
-
-font-size: 2rem;
-
-}
-
-
-section {
-
-padding: 50px 6%;
-
-}
+    .product-card img,
+    .event-card img {
+        height: 170px;
+    }
 
 }
