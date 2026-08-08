@@ -555,29 +555,36 @@ section {
 ========================== */
 
 
-.team-container {
 
+.team-container {
   display: flex;
   justify-content: center;
+  align-items: flex-start;
+  gap: 300px;                 /* space between the two members */
   margin-top: 30px;
 }
 
-
 .team-member {
-
   text-align: center;
+  width: 220px;
 }
 
-
 .team-member img {
-
   width: 180px;
   height: 180px;
-
   border-radius: 50%;
   object-fit: cover;
-
   box-shadow: var(--shadow);
+  display: block;
+  margin: 0 auto 15px;
+}
+
+.team-member h3 {
+  margin: 10px 0 5px;
+}
+
+.team-member p {
+  margin: 0;
 }
 
 
