@@ -155,14 +155,10 @@ section {
 ========================== */
 
 .logo {
-
-    flex: 0 1 auto;
-
-    min-width: 0;
-
-    max-width: calc(100% - 52px);
-
-    margin-right: auto;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  flex-shrink: 0;
 }
 
 .logo img {
@@ -317,17 +313,9 @@ section {
 ========================== */
 
 .hamburger {
-
-    display: flex;
-
-    width: 40px;
-    height: 40px;
-
-    flex: 0 0 40px;
-
-    margin-left: auto;
-
-    flex-shrink: 0;
+  display: none;
+  font-size: 28px;
+  cursor: pointer;
 }
 
 
@@ -1281,19 +1269,8 @@ flex-direction: column;
 
 .header-container {
 
-    min-height: 66px;
+padding: 15px 5%;
 
-    width: 100%;
-
-    padding: 8px 16px 8px 5%;
-
-    display: flex;
-
-    align-items: center;
-
-    justify-content: flex-start;
-
-    gap: 10px;
 }
 
 
